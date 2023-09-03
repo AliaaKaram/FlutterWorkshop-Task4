@@ -18,12 +18,16 @@ class CVScreen extends StatelessWidget {
               SizedBox(height: 20,),
               Center(
                 child: Container(
-                  color: Colors.pinkAccent,
                   width: 200,
                   height: 150,
                   child: Center(child: Padding(
                     padding:  EdgeInsets.all(2.0),
-                    child: Center(child: Text("My Picture", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),)),
+                    child: Center(child:
+                    CircleAvatar(
+                      radius: 70,
+                      backgroundImage: AssetImage('Assets/Images/human.png'),
+                    ),
+                  ),
                   )),
                 ),
               ),
